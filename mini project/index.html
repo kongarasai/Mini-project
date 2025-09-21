@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Calculator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="calculator p-4 rounded shadow">
+    <!-- Display -->
+    <input type="text" id="display" class="form-control mb-3 text-end" disabled placeholder="0">
+
+    <!-- Buttons container (CSS Grid) -->
+    <div class="buttons-grid">
+      <!-- Row 1 -->
+      <button class="btn btn-primary" onclick="press('7')">7</button>
+      <button class="btn btn-primary" onclick="press('8')">8</button>
+      <button class="btn btn-primary" onclick="press('9')">9</button>
+      <button class="btn btn-danger" onclick="pressOperator('/')">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn btn-primary" onclick="press('4')">4</button>
+      <button class="btn btn-primary" onclick="press('5')">5</button>
+      <button class="btn btn-primary" onclick="press('6')">6</button>
+      <button class="btn btn-danger" onclick="pressOperator('*')">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn btn-primary" onclick="press('1')">1</button>
+      <button class="btn btn-primary" onclick="press('2')">2</button>
+      <button class="btn btn-primary" onclick="press('3')">3</button>
+      <button class="btn btn-danger" onclick="pressOperator('-')">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-primary" onclick="press('0')">0</button>
+      <button class="btn btn-primary" onclick="pressDecimal()">.</button>
+      <button class="btn btn-danger" onclick="pressOperator('%')">%</button>
+      <button class="btn btn-danger" onclick="pressOperator('+')">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn btn-warning" onclick="applyFunction('square')">x²</button>
+      <button class="btn btn-warning" onclick="applyFunction('sqrt')">√</button>
+      <button class="btn btn-warning" onclick="pressPi()">π</button>
+      <button class="btn btn-warning" onclick="startPower()">xʸ</button>
+
+      <!-- Row 6 -->
+      <button class="btn btn-info" onclick="toggleSign()">±</button>
+      <button class="btn btn-secondary" onclick="backspace()">⌫</button>
+      <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+      <button class="btn btn-success" onclick="calculate()">=</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
