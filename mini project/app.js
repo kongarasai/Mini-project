@@ -1,13 +1,13 @@
-// ---------------- Get Display Element ----------------
+//  Get Display Element 
 const display = document.getElementById("display");
 let current = ""; // Stores the current input/expression
 
-// ---------------- Update Display ----------------
+//  Update Display 
 function updateDisplay() {
   display.textContent = current || "0"; // Show 0 if empty
 }
 
-// ---------------- Factorial Function ----------------
+// Factorial Function 
 function factorial(n) {
   n = Number(n);
   if (!Number.isInteger(n) || n < 0) return NaN; // Only non-negative integers
@@ -16,7 +16,7 @@ function factorial(n) {
   return res;
 }
 
-// ---------------- Evaluate Expression ----------------
+// Evaluate Expression 
 function evaluateExpression(expr) {
   // Replace calculator symbols with JS equivalents
   expr = expr
@@ -53,7 +53,7 @@ function evaluateExpression(expr) {
   return eval(expr);
 }
 
-// ---------------- Button Click Handling ----------------
+// Button Click Handling 
 document.querySelectorAll("button").forEach(btn => {
   btn.addEventListener("click", () => {
     const value = btn.textContent;
@@ -83,5 +83,6 @@ document.querySelectorAll("button").forEach(btn => {
   });
 });
 
-// ---------------- Initialize Display ----------------
+// Initialize Display 
 updateDisplay();
+
