@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- Bootstrap CSS for layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Container to center calculator vertically & horizontally -->
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="calculator">
+      
+      <!-- Display panel -->
+      <div class="display" id="display">0</div>
+      
+      <!-- Calculator buttons -->
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="op">÷</button>
+
+        <!-- Row 2 -->
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="op">×</button>
+
+        <!-- Row 3 -->
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="op">−</button>
+
+        <!-- Row 4 -->
+        <button class="num">0</button>
+        <button class="num">.</button>
+        <button class="op">%</button>
+        <button class="op">+</button>
+
+        <!-- Row 5 -->
+        <button class="func">x²</button>
+        <button class="func">√</button>
+        <button class="func">π</button>
+        <button class="func">xʸ</button>
+
+        <!-- Row 6 -->
+        <button class="func">sin</button>
+        <button class="func">cos</button>
+        <button class="func">tan</button>
+        <button class="func">(</button>
+
+        <!-- Row 7 -->
+        <button class="func">)</button>
+        <button class="special">±</button>
+        <button class="special">⌫</button>
+        <button class="clear">AC</button>
+
+        <!-- Row 8 -->
+        <button class="func">log</button>
+        <button class="func">!</button>
+        <button class="eq">=</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS for calculator functionality -->
+  <script src="app.js"></script>
+</body>
+</html>

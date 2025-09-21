@@ -1,0 +1,61 @@
+/*Body Styling  */
+body {
+  background: #1e1e1e;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+  background: #2b2b2b;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/*  Display Panel*/
+.display {
+  background: #a99696;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 15px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* ---------------- Buttons Grid ---------------- */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* ---------------- Common Button Styles ---------------- */
+button {
+  padding: 15px;          /* Rectangle-friendly padding */
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;     /* Small rounding for subtle rectangle */
+  cursor: pointer;
+  transition: 0.2s;
+  min-height: 55px;       /* Uniform height for all buttons */
+}
+
+/* ---------------- Button Colors ---------------- */
+.num { background: #6a6b6c; color: #fff; }
+.op { background: #4d4a4a; color: #fff; }
+.func { background: #353536; color: #fff; }
+.special { background: #930700; color: #fff; }
+.clear { background: #831f00; color: #fff; }
+.eq { background: #333533; color: #fff; grid-column: span 2; }
+
+/* ---------------- Hover Effect ---------------- */
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.03); /* Slight hover scale */
+}
