@@ -27,14 +27,14 @@ body {
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-/* ---------------- Buttons Grid ---------------- */
+/* Buttons Grid */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
-/* ---------------- Common Button Styles ---------------- */
+/* Common Button Styles */
 button {
   padding: 15px;          /* Rectangle-friendly padding */
   font-size: 1.1rem;
@@ -46,7 +46,7 @@ button {
   min-height: 55px;       /* Uniform height for all buttons */
 }
 
-/* ---------------- Button Colors ---------------- */
+/* Button Colors  */
 .num { background: #6a6b6c; color: #fff; }
 .op { background: #4d4a4a; color: #fff; }
 .func { background: #353536; color: #fff; }
@@ -54,8 +54,9 @@ button {
 .clear { background: #831f00; color: #fff; }
 .eq { background: #333533; color: #fff; grid-column: span 2; }
 
-/* ---------------- Hover Effect ---------------- */
+/* Hover Effect  */
 button:hover {
   opacity: 0.85;
   transform: scale(1.03); /* Slight hover scale */
 }
+
